@@ -590,3 +590,23 @@ insert into naren.employee(first_name,last_name,salary,date_of_birth,email_id,mo
 insert into naren.employee(first_name,last_name,salary,date_of_birth,email_id,mobile_number,department) values('Daryl','Murren','2043','5-Apr-1958','Daryl.Murren@gmail.com','04012346567',2);
 
 end;
+-----------------------------------------------------------------------------------------------------
+
+
+SELECT * FROM employee where trunc( sysdate,'YEAR') - trunC( Date_Of_Birth, 'YEAR') > 30 order by Date_of_birth desc
+ SELECT * FROM employee where trunc( sysdate,'YEAR') - trunC( Date_Of_Birth, 'YEAR') > 30 order by Date_of_birth 
+ 
+ 
+ Select sysdate from dual
+ 
+ select trunc( sysdate, 'YEAR') from  dual
+ 
+ SELECT * FROM employee
+WHERE months_between(sysdate,Date_Of_Birth)/12>30;
+SELECT * FROM employee WHERE months_between(sysdate,Date_Of_Birth)/12<25 order by emp_id
+ 
+ select trunc( sysdate, 'Month') from  dual
+ SELECT * FROM employee where trunc( sysdate,'YEAR') - trunC( Date_Of_Birth, 'YEAR') <30
+ SELECT * FROM employee order by Date_of_birth asc
+ SELECT * FROM employee order by Date_of_birth desc
+ 
