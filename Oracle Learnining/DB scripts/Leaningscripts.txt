@@ -1,0 +1,19 @@
+Create TABLE Naren.Student (
+Student_ID VARCHAR2(10) ,
+REG_ID Number,
+Email VARCHAR2(100) ,
+DOB Date 
+)
+
+INSERT INTO Naren.Student VALUES ('Dinesh001','1478','dinesh.add@abc.com',TO_DATE('1989-12-09','YYYY-MM-DD'))
+
+Select *From Student where Student_id= 'Dinesh006'
+INSERT INTO Naren.Student VALUES ('Dinesh002','1479','dinesh2.add@abc.com',TO_DATE('1989-11-09','YYYY-MM-DD'))
+INSERT INTO Naren.Student VALUES ('Dinesh003','1480','dinesh3.add@abc.com',TO_DATE('1989-10-09','YYYY-MM-DD'))
+INSERT INTO Naren.Student VALUES ('Dinesh004','1482','dinesh4.add@abc.com',TO_DATE('1989-09-09','YYYY-MM-DD'))
+INSERT INTO Naren.Student VALUES ('Dinesh005','1483','dinesh5.add@abc.com',TO_DATE('1989-08-09','YYYY-MM-DD'))
+INSERT INTO Naren.Student VALUES ('Dinesh006','1484','dinesh6.add@abc.com',TO_DATE('1989-07-09','YYYY-MM-DD'))
+INSERT INTO Naren.Student VALUES ('Dinesh007','1485','dinesh7.add@abc.com',TO_DATE('1989-06-09','YYYY-MM-DD'))
+
+INSERT INTO Naren.Student (Student_ID, DOB) VALUES ( 'Dinesh008',TO_DATE('1989-05-09','YYYY-MM-DD'))
+INSERT INTO NAren.Student (DOB, Email) VALUES (TO_DATE('1989-04-09','YYYY-MM-DD'), 'dinesh9.add@abc.com')  
