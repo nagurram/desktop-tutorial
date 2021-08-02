@@ -17,3 +17,14 @@ INSERT INTO Naren.Student VALUES ('Dinesh007','1485','dinesh7.add@abc.com',TO_DA
 
 INSERT INTO Naren.Student (Student_ID, DOB) VALUES ( 'Dinesh008',TO_DATE('1989-05-09','YYYY-MM-DD'))
 INSERT INTO NAren.Student (DOB, Email) VALUES (TO_DATE('1989-04-09','YYYY-MM-DD'), 'dinesh9.add@abc.com')  
+
+
+select reg.region_ID, Con.Country_name, reg.region_Name from regions reg join Countries con on reg.region_ID = con.region_ID
+select OIT.order_ID, Pro.Product_ID, Pro.Product_Name, OIT.Item_ID, OIT.Unit_Price from Order_Items OIT join Products Pro on OIT.Product_ID = Pro.Product_ID 
+select OIT.order_ID, Pro.Product_ID, Pro.Product_Name, OIT.Item_ID, OIT.Unit_Price from Order_Items OIT join Products Pro on OIT.Product_ID = Pro.Product_ID 
+where OIT.Unit_Price < 100 order by OIT.Unit_Price DESC
+select  ORD.order_Date, ORD.order_ID, Pro.Product_ID, Pro.Product_Name, OIT.Item_ID, OIT.Unit_Price from Orders ORD join Order_Items OIT on ORD.Order_ID =  OIT.Order_ID 
+join Products Pro on Pro.Product_ID = OIT.Product_ID where OIT.Unit_Price < 100 order by ORD.order_Date ASC
+
+select  ORD.order_Date, OIT.Unit_Price, Pro.Product_ID, Pro.Product_Name, OIT.Item_ID, ORD.order_ID from Orders ORD join Order_Items OIT on ORD.Order_ID =  OIT.Order_ID 
+join Products Pro on Pro.Product_ID = OIT.Product_ID where OIT.Unit_Price < 100 order by ORD.order_Date, OIT.Unit_Price ASC
